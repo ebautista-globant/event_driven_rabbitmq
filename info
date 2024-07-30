@@ -1,0 +1,171 @@
+No hostname was supplied. Reverting to default 'localhost'
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+Unrecoverable error: AttributeError("'HistoricConsumer' object has no attribute 'queue_name'")
+Traceback (most recent call last):
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 397, in start
+    self.consumers = self.get_consumers(channel)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/src/consumers/base_consumer.py", line 28, in get_consumers
+    self.queue_name,
+    ^^^^^^^^^^^^^^^
+AttributeError: 'HistoricConsumer' object has no attribute 'queue_name'
+No hostname was supplied. Reverting to default 'localhost'
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+Unrecoverable error: TypeError('_unpack_version() takes from 1 to 5 positional arguments but 6 were given')
+Traceback (most recent call last):
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/tasks.py", line 31, in start
+    qos_global = not c.connection.qos_semantics_matches_spec
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/kombu/connection.py", line 889, in qos_semantics_matches_spec
+    return self.transport.qos_semantics_matches_spec(self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/kombu/transport/pyamqp.py", line 227, in qos_semantics_matches_spec
+    return version_string_as_tuple(props['version']) < (3, 3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/kombu/utils/text.py", line 47, in version_string_as_tuple
+    v = _unpack_version(*s.split('.'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _unpack_version() takes from 1 to 5 positional arguments but 6 were given
+No hostname was supplied. Reverting to default 'localhost'
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+Unrecoverable error: AttributeError("'HistoricConsumer' object has no attribute 'queue_name'")
+Traceback (most recent call last):
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 397, in start
+    self.consumers = self.get_consumers(channel)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/src/consumers/base_consumer.py", line 28, in get_consumers
+    self.queue_name,
+    ^^^^^^^^^^^^^^^
+AttributeError: 'HistoricConsumer' object has no attribute 'queue_name'
+No hostname was supplied. Reverting to default 'localhost'
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+Unrecoverable error: TypeError('_unpack_version() takes from 1 to 5 positional arguments but 6 were given')
+Traceback (most recent call last):
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/tasks.py", line 31, in start
+    qos_global = not c.connection.qos_semantics_matches_spec
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/kombu/connection.py", line 889, in qos_semantics_matches_spec
+    return self.transport.qos_semantics_matches_spec(self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/kombu/transport/pyamqp.py", line 227, in qos_semantics_matches_spec
+    return version_string_as_tuple(props['version']) < (3, 3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/kombu/utils/text.py", line 47, in version_string_as_tuple
+    v = _unpack_version(*s.split('.'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _unpack_version() takes from 1 to 5 positional arguments but 6 were given
+No hostname was supplied. Reverting to default 'localhost'
+/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+Unrecoverable error: AttributeError("'RealtimeConsumer' object has no attribute 'queue_name'")
+Traceback (most recent call last):
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py", line 340, in start
+    blueprint.start(self)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/.venv/lib/python3.12/site-packages/celery/bootsteps.py", line 397, in start
+    self.consumers = self.get_consumers(channel)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/e.bautista/projects/event_driven_rabbitmq/src/consumers/base_consumer.py", line 28, in get_consumers
+    self.queue_name,
+    ^^^^^^^^^^^^^^^
+AttributeError: 'RealtimeConsumer' object has no attribute 'queue_name'

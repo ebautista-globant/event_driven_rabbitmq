@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "event-driven-rabbitmq"
+version = "0.1.0"
+description = ""
+authors = ["Arturo Bautista <artugro.artr@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+celery = "^5.4.0"
+kombu = "^5.3.7"
+python-dotenv = "^1.0.1"
+structlog = "^24.4.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
