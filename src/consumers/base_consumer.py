@@ -49,6 +49,7 @@ class BaseConsumer(bootsteps.ConsumerStep):
             processor = self.route_keys.get(key)
             if processor:
                 processor(bdy, message).execute()
+
             else:
                 handle.requeue = 0
                 handle.reject = 1

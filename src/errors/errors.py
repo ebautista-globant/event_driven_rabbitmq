@@ -3,6 +3,7 @@ import traceback
 from contextlib import contextmanager
 
 from kombu.exceptions import MessageStateError
+from logging import getLogger
 
 
 class AppBaseError(Exception):
